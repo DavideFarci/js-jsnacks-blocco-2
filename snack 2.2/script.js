@@ -16,13 +16,13 @@ creo una variabile che unisca un valore random dei due array
 
 for (i = 0; i < eleNome.length; i++) {
 
-    let eleAdd = eleNome[i] + " " + eleCognome[i];
-    eleNomiCognomi.push(eleAdd);
+    // let eleAdd = eleNome[i] + " " + eleCognome[i];
+    // eleNomiCognomi.push(eleAdd);
 
-    // let eleNomeCasuale = eleNome[Math.floor(Math.random() * eleNome.length)];
-    // let eleCognomeCasuale = eleCognome[Math.floor(Math.random() * eleCognome.length)];
-    // let eleMix = eleNomeCasuale + " " + eleCognomeCasuale;
-    // eleNomiCognomi.push(eleMix);
+    let eleNomeCasuale = eleNome[Math.floor(Math.random() * eleNome.length)];
+    let eleCognomeCasuale = eleCognome[Math.floor(Math.random() * eleCognome.length)];
+    let eleMix = eleNomeCasuale + " " + eleCognomeCasuale;
+    eleNomiCognomi.push(eleMix);
 }
 
 console.log(eleNomiCognomi);
