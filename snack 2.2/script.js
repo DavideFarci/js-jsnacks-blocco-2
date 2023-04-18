@@ -19,8 +19,8 @@ for (i = 0; i < eleNome.length; i++) {
     // let eleAdd = eleNome[i] + " " + eleCognome[i];
     // eleNomiCognomi.push(eleAdd);
 
-    let eleNomeCasuale = eleNome[Math.floor(Math.random() * eleNome.length)];
-    let eleCognomeCasuale = eleCognome[Math.floor(Math.random() * eleCognome.length)];
+    let eleNomeCasuale = eleNome[Math.floor((Math.random() * eleNome.length) + 1)];
+    let eleCognomeCasuale = eleCognome[Math.floor((Math.random() * eleCognome.length) + 1)];
     let eleMix = eleNomeCasuale + " " + eleCognomeCasuale;
     eleNomiCognomi.push(eleMix);
 }
