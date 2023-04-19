@@ -18,5 +18,6 @@ for (i = 0; i < 6; i++) {
     if (eleNum % 2 !== 0) {
         eleOdd.push(eleNum);
     }
-    console.log(eleOdd);
 }
+
+console.log(eleOdd);

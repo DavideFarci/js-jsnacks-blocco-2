@@ -8,11 +8,10 @@ let eleOdd = 0;
 
 // creo un ciclo che scorra tutto eleWhole ogni due valori 
 for (i = 0; i < eleWhole.length; i++) {
-    if (i & 2 !== 0) {
+    if (i % 2 !== 0) {
         eleOdd += eleWhole[i];
     }
 }
 
-console.log("La somma dei numeri in posizione dispari è:");
-console.log(eleOdd);
+console.log("La somma dei numeri in posizione dispari è:", eleOdd);
 
