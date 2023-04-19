@@ -14,15 +14,25 @@ Creo un ciclo nel quale si scorrano tutti gli i degli array "eleNome" "eleCognom
 creo una variabile che unisca un valore random dei due array
 */
 
-for (i = 0; i < 6; i++) {
+for (i = 0; i < eleNome.length; i++) {
 
     // let eleAdd = eleNome[i] + " " + eleCognome[i];
     // eleNomiCognomi.push(eleAdd);
 
-    let eleNomeCasuale = eleNome[Math.floor(Math.random() * eleNome.length) + 1];
-    let eleCognomeCasuale = eleCognome[Math.floor(Math.random() * eleCognome.length) + 1];
+    let eleNomeCasuale = eleNome[Math.floor(Math.random() * eleNome.length)];
+    let eleCognomeCasuale = eleCognome[Math.floor(Math.random() * eleCognome.length)];
     let eleMix = eleNomeCasuale + " " + eleCognomeCasuale;
     eleNomiCognomi.push(eleMix);
 }
+
+    // METODO DI HENRI
+    // for (let i = 0; i < eleNome.length; i++) {
+    //     let firstName = eleNome[i];
+    //     let randIndex = Math.floor(Math.random() * eleCognome.length);
+    //     let lastName = eleCognome[randIndex];
+    //     let fullName = firstName + " " + lastName;
+    //     eleNomiCognomi.push(fullName);
+    // }
+
 
 console.log(eleNomiCognomi);
