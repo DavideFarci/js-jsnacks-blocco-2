@@ -10,6 +10,7 @@ let eleOdd = 0;
 for (i = 0; i < eleWhole.length; i++) {
     if (i % 2 !== 0) {
         eleOdd += eleWhole[i];
+        console.log(eleOdd);
     }
 }
 
